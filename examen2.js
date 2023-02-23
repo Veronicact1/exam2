@@ -14,13 +14,13 @@
 //     console.log("el numero"+a+"es impar");
 // }
 //ej.9
-let l=prompt("Escribe un numero entero positivo");
-if ( l < 20) {
-    console.log(l+1);
-}
-else {
-    console.log(l);
-}
+// let l=prompt("Escribe un numero entero positivo");
+// if ( l < 20) {
+//     console.log(l+1);
+// }
+// else {
+//     console.log(l);
+// }
 //ej.10
 // let palindromo="sometemos";
 // let inverso=""
@@ -37,13 +37,25 @@ else {
 // }
 // else{
 //     console.log("La variable palindromo: " +palindromo+ " no es un palindromo")}
-    //ej.11
+    /*ej.11*/
     // let colores=["yellow","green","red"];
     // let repeat_colores=[];
     // for (let y of colores){
     // }
     // repeat_colores.push(colores);
     // console.log(repeat_colores);
+ 
+ /*ejercicio12
+1.Formamos un nuevo file.typescript
+2.Abrimos cmd en la carpeta donde esta guardado el exam2.ts
+3.escribimos el comando: tsc exam2.ts
+4.enter
+5.en la misma carpeta aparece un nuevo file transpilado a JavaScript de TypeScript: exam2.js*/
 
-    
+ /*ejecicio 13*/
+    var text="la version de"
+    console.log(text+" TS: tsc -v");
+    console.log(text+" Node: node -v");
+    console.log(text+" Angular: ng v");
+
     
