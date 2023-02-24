@@ -7,5 +7,5 @@
 })
 
 export class AppComponent {
-  title = 'app_exam';
+  constructor (public infoPaginaService:InfoPaginaService){}
 }
