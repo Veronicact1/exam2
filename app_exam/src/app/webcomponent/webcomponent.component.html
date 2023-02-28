@@ -1,6 +1,7 @@
-<!-- 
-     <div *ngFor="let p of infoService.ex">
-      <img [src]="p.imagen:">
-      <h5>{{ persona.nombre: }}</h5>
-      <p>{{ persona.status: }}</p>
-    </div>  -->
+<div>
+  <div *ngFor="let persona of infoService.equipo">
+  <img [src]="persona.imagen" alt="" class="au-mb-3">
+  <h5>{{ persona.nobre }}</h5>
+  <p >{{ persona.status }}</p>
+  </div>
+  </div>

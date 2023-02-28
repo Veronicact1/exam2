@@ -9,7 +9,7 @@ import { InfoPagina } from '../Interfaces/info-pagina.interfaces';
 export class InfoPaginaService {
   info: InfoPagina= {};
   cargada = false; 
-  ex: any = [];
+  equipo: any = [];
   constructor( private http:HttpClient ) {
     this.cargaInfo();
     this.cargarEquipo();
@@ -26,7 +26,7 @@ export class InfoPaginaService {
     this.http
     .get("https://examen2-5b48d-default-rtdb.europe-west1.firebasedatabase.app/equipo.json")
     .subscribe( (resp) => {
-      this.ex = resp; 
+      this.equipo = resp; 
       console.log(resp);
       });
   }
