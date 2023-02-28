@@ -1,16 +1,16 @@
 import { HttpClientModule } from '@angular/common/http';
-import { Injectable, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { ExComponent } from './ex/ex.component';
 import { WebcomponentComponent } from './webcomponent/webcomponent.component';
-@Injectable({providedIn:'root'})
-
-@NgModule({
+@NgModule ({
   declarations: [
     ExComponent,
-    WebcomponentComponent
+    WebcomponentComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -18,5 +18,6 @@ import { WebcomponentComponent } from './webcomponent/webcomponent.component';
     HttpClientModule,
   ],
   providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
