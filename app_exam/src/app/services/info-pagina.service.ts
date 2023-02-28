@@ -24,7 +24,7 @@ export class InfoPaginaService {
 
   private cargarEquipo(){
     this.http
-    .get("https://examen2-5b48d-default-rtdb.europe-west1.firebasedatabase.app/ex.json")
+    .get("https://examen2-5b48d-default-rtdb.europe-west1.firebasedatabase.app/equipo.json")
     .subscribe( (resp) => {
       this.ex = resp; 
       console.log(resp);
